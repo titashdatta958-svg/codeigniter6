@@ -1,0 +1,1402 @@
+DEBUG - 2026-01-13 06:35:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2026-01-13 06:35:18 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\xampp\htdocs\codeigniter6\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 C:\xampp\htdocs\codeigniter6\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'migration_izifi...', 3306, '', 0)
+#1 C:\xampp\htdocs\codeigniter6\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\codeigniter6\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\codeigniter6\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\codeigniter6\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\codeigniter6\system\BaseModel.php(677): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\codeigniter6\app\Controllers\Auth.php(75): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\codeigniter6\system\CodeIgniter.php(933): App\Controllers\Auth->register()
+#8 C:\xampp\htdocs\codeigniter6\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#9 C:\xampp\htdocs\codeigniter6\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\codeigniter6\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\codeigniter6\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\codeigniter6\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 C:\xampp\htdocs\codeigniter6\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in C:\xampp\htdocs\codeigniter6\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 C:\xampp\htdocs\codeigniter6\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\codeigniter6\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\codeigniter6\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\codeigniter6\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\codeigniter6\system\BaseModel.php(677): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\xampp\htdocs\codeigniter6\app\Controllers\Auth.php(75): CodeIgniter\BaseModel->findAll()
+#6 C:\xampp\htdocs\codeigniter6\system\CodeIgniter.php(933): App\Controllers\Auth->register()
+#7 C:\xampp\htdocs\codeigniter6\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#8 C:\xampp\htdocs\codeigniter6\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\codeigniter6\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\codeigniter6\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp\htdocs\codeigniter6\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 C:\xampp\htdocs\codeigniter6\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2026-01-13 06:35:18 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+[Method: GET, Route: auth/register]
+in SYSTEMPATH\Database\BaseConnection.php on line 465.
+ 1 SYSTEMPATH\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `izifiso_department`', [], false)
+ 3 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(677): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\Auth.php(75): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Auth->register()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\codeigniter6\\public\\index.php')
+DEBUG - 2026-01-13 06:35:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2026-01-13 06:35:23 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\xampp\htdocs\codeigniter6\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 C:\xampp\htdocs\codeigniter6\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'migration_izifi...', 3306, '', 0)
+#1 C:\xampp\htdocs\codeigniter6\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\codeigniter6\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\codeigniter6\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\codeigniter6\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\codeigniter6\system\BaseModel.php(677): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\codeigniter6\app\Controllers\Auth.php(75): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\codeigniter6\system\CodeIgniter.php(933): App\Controllers\Auth->register()
+#8 C:\xampp\htdocs\codeigniter6\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#9 C:\xampp\htdocs\codeigniter6\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\codeigniter6\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\codeigniter6\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\codeigniter6\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 C:\xampp\htdocs\codeigniter6\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in C:\xampp\htdocs\codeigniter6\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 C:\xampp\htdocs\codeigniter6\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\codeigniter6\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\codeigniter6\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\codeigniter6\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\codeigniter6\system\BaseModel.php(677): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\xampp\htdocs\codeigniter6\app\Controllers\Auth.php(75): CodeIgniter\BaseModel->findAll()
+#6 C:\xampp\htdocs\codeigniter6\system\CodeIgniter.php(933): App\Controllers\Auth->register()
+#7 C:\xampp\htdocs\codeigniter6\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#8 C:\xampp\htdocs\codeigniter6\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\codeigniter6\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\codeigniter6\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp\htdocs\codeigniter6\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 C:\xampp\htdocs\codeigniter6\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2026-01-13 06:35:23 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+[Method: GET, Route: auth/register]
+in SYSTEMPATH\Database\BaseConnection.php on line 465.
+ 1 SYSTEMPATH\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `izifiso_department`', [], false)
+ 3 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(677): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\Auth.php(75): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Auth->register()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\codeigniter6\\public\\index.php')
+DEBUG - 2026-01-13 06:35:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-13 06:35:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-13 06:35:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-13 06:35:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-13 06:35:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2026-01-13 06:35:57 --> mysqli_sql_exception: Table 'migration_izifiso_db.izifiso_zone_destination_mapping' doesn't exist in C:\xampp\htdocs\codeigniter6\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\codeigniter6\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `z`.`id`...', 0)
+#1 C:\xampp\htdocs\codeigniter6\system\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `z`.`id`...')
+#2 C:\xampp\htdocs\codeigniter6\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `z`.`id`...')
+#3 C:\xampp\htdocs\codeigniter6\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `z`.`id`...', Array, false)
+#4 C:\xampp\htdocs\codeigniter6\app\Models\ZoneModel.php(19): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\codeigniter6\app\Controllers\Zones.php(14): App\Models\ZoneModel->getZonesWithDestinationCount()
+#6 C:\xampp\htdocs\codeigniter6\system\CodeIgniter.php(933): App\Controllers\Zones->index()
+#7 C:\xampp\htdocs\codeigniter6\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Zones))
+#8 C:\xampp\htdocs\codeigniter6\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\codeigniter6\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\codeigniter6\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp\htdocs\codeigniter6\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 C:\xampp\htdocs\codeigniter6\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2026-01-13 06:35:57 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'migration_izifiso_db.izifiso_zone_destination_mapping' doesn't exist
+[Method: GET, Route: zones]
+in SYSTEMPATH\Database\BaseConnection.php on line 684.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `z`.`id`, `z`.`zone_name`, COUNT(m.destination_id) AS destination_count
+FROM `izifiso_zone_m` `z`
+LEFT JOIN `izifiso_zone_destination_mapping` `m` ON `m`.`zone_id` = `z`.`id`
+GROUP BY `z`.`id`', [], false)
+ 2 APPPATH\Models\ZoneModel.php(19): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Zones.php(14): App\Models\ZoneModel->getZonesWithDestinationCount()
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Zones->index()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Zones))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\codeigniter6\\public\\index.php')
+CRITICAL - 2026-01-13 06:35:57 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'migration_izifiso_db.izifiso_zone_destination_mapping' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `z`.`id`, `z`.`zone_name`, COUNT(m.destination_id) AS destination_count
+FROM `izifiso_zone_m` `z`
+LEFT JOIN `izifiso_zone_destination_mapping` `m` ON `m`.`zone_id` = `z`.`id`
+GROUP BY `z`.`id`')
+ 2 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `z`.`id`, `z`.`zone_name`, COUNT(m.destination_id) AS destination_count
+FROM `izifiso_zone_m` `z`
+LEFT JOIN `izifiso_zone_destination_mapping` `m` ON `m`.`zone_id` = `z`.`id`
+GROUP BY `z`.`id`')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `z`.`id`, `z`.`zone_name`, COUNT(m.destination_id) AS destination_count
+FROM `izifiso_zone_m` `z`
+LEFT JOIN `izifiso_zone_destination_mapping` `m` ON `m`.`zone_id` = `z`.`id`
+GROUP BY `z`.`id`', [], false)
+ 4 APPPATH\Models\ZoneModel.php(19): CodeIgniter\Database\BaseBuilder->get()
+ 5 APPPATH\Controllers\Zones.php(14): App\Models\ZoneModel->getZonesWithDestinationCount()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Zones->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Zones))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\codeigniter6\\public\\index.php')
+CRITICAL - 2026-01-13 06:35:57 --> [Caused by] mysqli_sql_exception: Table 'migration_izifiso_db.izifiso_zone_destination_mapping' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `z`.`id`, `z`.`zone_name`, COUNT(m.destination_id) AS destination_count
+FROM `izifiso_zone_m` `z`
+LEFT JOIN `izifiso_zone_destination_mapping` `m` ON `m`.`zone_id` = `z`.`id`
+GROUP BY `z`.`id`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `z`.`id`, `z`.`zone_name`, COUNT(m.destination_id) AS destination_count
+FROM `izifiso_zone_m` `z`
+LEFT JOIN `izifiso_zone_destination_mapping` `m` ON `m`.`zone_id` = `z`.`id`
+GROUP BY `z`.`id`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `z`.`id`, `z`.`zone_name`, COUNT(m.destination_id) AS destination_count
+FROM `izifiso_zone_m` `z`
+LEFT JOIN `izifiso_zone_destination_mapping` `m` ON `m`.`zone_id` = `z`.`id`
+GROUP BY `z`.`id`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `z`.`id`, `z`.`zone_name`, COUNT(m.destination_id) AS destination_count
+FROM `izifiso_zone_m` `z`
+LEFT JOIN `izifiso_zone_destination_mapping` `m` ON `m`.`zone_id` = `z`.`id`
+GROUP BY `z`.`id`', [], false)
+ 5 APPPATH\Models\ZoneModel.php(19): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Zones.php(14): App\Models\ZoneModel->getZonesWithDestinationCount()
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Zones->index()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Zones))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\codeigniter6\\public\\index.php')
+DEBUG - 2026-01-13 06:36:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-13 07:05:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-13 07:12:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-13 07:12:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2026-01-13 07:12:04 --> mysqli_sql_exception: Table 'migration_izifiso_db.izifiso_zone_destination_mapping' doesn't exist in C:\xampp\htdocs\codeigniter6\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\codeigniter6\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `z`.`id`...', 0)
+#1 C:\xampp\htdocs\codeigniter6\system\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `z`.`id`...')
+#2 C:\xampp\htdocs\codeigniter6\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `z`.`id`...')
+#3 C:\xampp\htdocs\codeigniter6\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `z`.`id`...', Array, false)
+#4 C:\xampp\htdocs\codeigniter6\app\Models\ZoneModel.php(19): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\codeigniter6\app\Controllers\Zones.php(14): App\Models\ZoneModel->getZonesWithDestinationCount()
+#6 C:\xampp\htdocs\codeigniter6\system\CodeIgniter.php(933): App\Controllers\Zones->index()
+#7 C:\xampp\htdocs\codeigniter6\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Zones))
+#8 C:\xampp\htdocs\codeigniter6\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\codeigniter6\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\codeigniter6\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp\htdocs\codeigniter6\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 C:\xampp\htdocs\codeigniter6\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2026-01-13 07:12:04 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'migration_izifiso_db.izifiso_zone_destination_mapping' doesn't exist
+[Method: GET, Route: zones]
+in SYSTEMPATH\Database\BaseConnection.php on line 684.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `z`.`id`, `z`.`zone_name`, COUNT(m.destination_id) AS destination_count
+FROM `izifiso_zone_m` `z`
+LEFT JOIN `izifiso_zone_destination_mapping` `m` ON `m`.`zone_id` = `z`.`id`
+GROUP BY `z`.`id`', [], false)
+ 2 APPPATH\Models\ZoneModel.php(19): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Zones.php(14): App\Models\ZoneModel->getZonesWithDestinationCount()
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Zones->index()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Zones))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\codeigniter6\\public\\index.php')
+CRITICAL - 2026-01-13 07:12:04 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'migration_izifiso_db.izifiso_zone_destination_mapping' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `z`.`id`, `z`.`zone_name`, COUNT(m.destination_id) AS destination_count
+FROM `izifiso_zone_m` `z`
+LEFT JOIN `izifiso_zone_destination_mapping` `m` ON `m`.`zone_id` = `z`.`id`
+GROUP BY `z`.`id`')
+ 2 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `z`.`id`, `z`.`zone_name`, COUNT(m.destination_id) AS destination_count
+FROM `izifiso_zone_m` `z`
+LEFT JOIN `izifiso_zone_destination_mapping` `m` ON `m`.`zone_id` = `z`.`id`
+GROUP BY `z`.`id`')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `z`.`id`, `z`.`zone_name`, COUNT(m.destination_id) AS destination_count
+FROM `izifiso_zone_m` `z`
+LEFT JOIN `izifiso_zone_destination_mapping` `m` ON `m`.`zone_id` = `z`.`id`
+GROUP BY `z`.`id`', [], false)
+ 4 APPPATH\Models\ZoneModel.php(19): CodeIgniter\Database\BaseBuilder->get()
+ 5 APPPATH\Controllers\Zones.php(14): App\Models\ZoneModel->getZonesWithDestinationCount()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Zones->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Zones))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\codeigniter6\\public\\index.php')
+CRITICAL - 2026-01-13 07:12:04 --> [Caused by] mysqli_sql_exception: Table 'migration_izifiso_db.izifiso_zone_destination_mapping' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `z`.`id`, `z`.`zone_name`, COUNT(m.destination_id) AS destination_count
+FROM `izifiso_zone_m` `z`
+LEFT JOIN `izifiso_zone_destination_mapping` `m` ON `m`.`zone_id` = `z`.`id`
+GROUP BY `z`.`id`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `z`.`id`, `z`.`zone_name`, COUNT(m.destination_id) AS destination_count
+FROM `izifiso_zone_m` `z`
+LEFT JOIN `izifiso_zone_destination_mapping` `m` ON `m`.`zone_id` = `z`.`id`
+GROUP BY `z`.`id`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `z`.`id`, `z`.`zone_name`, COUNT(m.destination_id) AS destination_count
+FROM `izifiso_zone_m` `z`
+LEFT JOIN `izifiso_zone_destination_mapping` `m` ON `m`.`zone_id` = `z`.`id`
+GROUP BY `z`.`id`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `z`.`id`, `z`.`zone_name`, COUNT(m.destination_id) AS destination_count
+FROM `izifiso_zone_m` `z`
+LEFT JOIN `izifiso_zone_destination_mapping` `m` ON `m`.`zone_id` = `z`.`id`
+GROUP BY `z`.`id`', [], false)
+ 5 APPPATH\Models\ZoneModel.php(19): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Zones.php(14): App\Models\ZoneModel->getZonesWithDestinationCount()
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Zones->index()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Zones))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\codeigniter6\\public\\index.php')
+DEBUG - 2026-01-13 07:12:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-13 07:12:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-13 07:12:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-13 07:12:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-13 07:12:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-13 07:12:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-13 07:12:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-13 07:12:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-01-13 07:12:43 --> ErrorException: Undefined property: App\Controllers\TeamBuilder::$db
+[Method: POST, Route: team-builder/assign]
+in APPPATH\Controllers\TeamBuilder.php on line 129.
+ 1 APPPATH\Controllers\TeamBuilder.php(129): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\TeamBuilder::$db', 'C:\\xampp\\htdocs\\codeigniter6\\app\\Controllers\\TeamBuilder.php', 129)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\TeamBuilder->assign_member()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TeamBuilder))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\codeigniter6\\public\\index.php')
+ERROR - 2026-01-13 07:12:53 --> mysqli_sql_exception: Table 'migration_izifiso_db.izifiso_zone_destination_mapping' doesn't exist in C:\xampp\htdocs\codeigniter6\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\codeigniter6\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `z`.`id`...', 0)
+#1 C:\xampp\htdocs\codeigniter6\system\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `z`.`id`...')
+#2 C:\xampp\htdocs\codeigniter6\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `z`.`id`...')
+#3 C:\xampp\htdocs\codeigniter6\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `z`.`id`...', Array, false)
+#4 C:\xampp\htdocs\codeigniter6\app\Models\ZoneModel.php(19): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\codeigniter6\app\Controllers\Zones.php(14): App\Models\ZoneModel->getZonesWithDestinationCount()
+#6 C:\xampp\htdocs\codeigniter6\system\CodeIgniter.php(933): App\Controllers\Zones->index()
+#7 C:\xampp\htdocs\codeigniter6\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Zones))
+#8 C:\xampp\htdocs\codeigniter6\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\codeigniter6\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\codeigniter6\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp\htdocs\codeigniter6\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 C:\xampp\htdocs\codeigniter6\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2026-01-13 07:12:53 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'migration_izifiso_db.izifiso_zone_destination_mapping' doesn't exist
+[Method: GET, Route: zones]
+in SYSTEMPATH\Database\BaseConnection.php on line 684.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `z`.`id`, `z`.`zone_name`, COUNT(m.destination_id) AS destination_count
+FROM `izifiso_zone_m` `z`
+LEFT JOIN `izifiso_zone_destination_mapping` `m` ON `m`.`zone_id` = `z`.`id`
+GROUP BY `z`.`id`', [], false)
+ 2 APPPATH\Models\ZoneModel.php(19): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Zones.php(14): App\Models\ZoneModel->getZonesWithDestinationCount()
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Zones->index()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Zones))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\codeigniter6\\public\\index.php')
+CRITICAL - 2026-01-13 07:12:53 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'migration_izifiso_db.izifiso_zone_destination_mapping' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `z`.`id`, `z`.`zone_name`, COUNT(m.destination_id) AS destination_count
+FROM `izifiso_zone_m` `z`
+LEFT JOIN `izifiso_zone_destination_mapping` `m` ON `m`.`zone_id` = `z`.`id`
+GROUP BY `z`.`id`')
+ 2 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `z`.`id`, `z`.`zone_name`, COUNT(m.destination_id) AS destination_count
+FROM `izifiso_zone_m` `z`
+LEFT JOIN `izifiso_zone_destination_mapping` `m` ON `m`.`zone_id` = `z`.`id`
+GROUP BY `z`.`id`')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `z`.`id`, `z`.`zone_name`, COUNT(m.destination_id) AS destination_count
+FROM `izifiso_zone_m` `z`
+LEFT JOIN `izifiso_zone_destination_mapping` `m` ON `m`.`zone_id` = `z`.`id`
+GROUP BY `z`.`id`', [], false)
+ 4 APPPATH\Models\ZoneModel.php(19): CodeIgniter\Database\BaseBuilder->get()
+ 5 APPPATH\Controllers\Zones.php(14): App\Models\ZoneModel->getZonesWithDestinationCount()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Zones->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Zones))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\codeigniter6\\public\\index.php')
+CRITICAL - 2026-01-13 07:12:53 --> [Caused by] mysqli_sql_exception: Table 'migration_izifiso_db.izifiso_zone_destination_mapping' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `z`.`id`, `z`.`zone_name`, COUNT(m.destination_id) AS destination_count
+FROM `izifiso_zone_m` `z`
+LEFT JOIN `izifiso_zone_destination_mapping` `m` ON `m`.`zone_id` = `z`.`id`
+GROUP BY `z`.`id`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `z`.`id`, `z`.`zone_name`, COUNT(m.destination_id) AS destination_count
+FROM `izifiso_zone_m` `z`
+LEFT JOIN `izifiso_zone_destination_mapping` `m` ON `m`.`zone_id` = `z`.`id`
+GROUP BY `z`.`id`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `z`.`id`, `z`.`zone_name`, COUNT(m.destination_id) AS destination_count
+FROM `izifiso_zone_m` `z`
+LEFT JOIN `izifiso_zone_destination_mapping` `m` ON `m`.`zone_id` = `z`.`id`
+GROUP BY `z`.`id`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `z`.`id`, `z`.`zone_name`, COUNT(m.destination_id) AS destination_count
+FROM `izifiso_zone_m` `z`
+LEFT JOIN `izifiso_zone_destination_mapping` `m` ON `m`.`zone_id` = `z`.`id`
+GROUP BY `z`.`id`', [], false)
+ 5 APPPATH\Models\ZoneModel.php(19): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Zones.php(14): App\Models\ZoneModel->getZonesWithDestinationCount()
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Zones->index()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Zones))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\codeigniter6\\public\\index.php')
+DEBUG - 2026-01-13 07:24:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-13 07:24:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-13 07:24:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-13 07:24:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-13 07:24:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-13 07:24:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-13 07:24:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-13 07:24:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-13 07:24:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-13 07:24:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-13 07:25:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-13 07:25:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-13 07:25:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-13 07:25:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-01-13 07:25:38 --> ErrorException: Undefined property: App\Controllers\TeamBuilder::$db
+[Method: POST, Route: team-builder/assign]
+in APPPATH\Controllers\TeamBuilder.php on line 129.
+ 1 APPPATH\Controllers\TeamBuilder.php(129): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\TeamBuilder::$db', 'C:\\xampp\\htdocs\\codeigniter6\\app\\Controllers\\TeamBuilder.php', 129)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\TeamBuilder->assign_member()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TeamBuilder))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\codeigniter6\\public\\index.php')
+DEBUG - 2026-01-13 07:25:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-01-13 07:25:41 --> ErrorException: Undefined property: App\Controllers\TeamBuilder::$db
+[Method: POST, Route: team-builder/assign]
+in APPPATH\Controllers\TeamBuilder.php on line 129.
+ 1 APPPATH\Controllers\TeamBuilder.php(129): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\TeamBuilder::$db', 'C:\\xampp\\htdocs\\codeigniter6\\app\\Controllers\\TeamBuilder.php', 129)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\TeamBuilder->assign_member()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TeamBuilder))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\codeigniter6\\public\\index.php')
+DEBUG - 2026-01-13 07:25:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-01-13 07:25:44 --> ErrorException: Undefined property: App\Controllers\TeamBuilder::$db
+[Method: POST, Route: team-builder/assign]
+in APPPATH\Controllers\TeamBuilder.php on line 129.
+ 1 APPPATH\Controllers\TeamBuilder.php(129): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\TeamBuilder::$db', 'C:\\xampp\\htdocs\\codeigniter6\\app\\Controllers\\TeamBuilder.php', 129)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\TeamBuilder->assign_member()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TeamBuilder))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\codeigniter6\\public\\index.php')
+DEBUG - 2026-01-13 07:25:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-01-13 07:25:46 --> ErrorException: Undefined property: App\Controllers\TeamBuilder::$db
+[Method: POST, Route: team-builder/assign]
+in APPPATH\Controllers\TeamBuilder.php on line 129.
+ 1 APPPATH\Controllers\TeamBuilder.php(129): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\TeamBuilder::$db', 'C:\\xampp\\htdocs\\codeigniter6\\app\\Controllers\\TeamBuilder.php', 129)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\TeamBuilder->assign_member()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TeamBuilder))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\codeigniter6\\public\\index.php')
+DEBUG - 2026-01-13 07:25:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-01-13 07:25:48 --> ErrorException: Undefined property: App\Controllers\TeamBuilder::$db
+[Method: POST, Route: team-builder/assign]
+in APPPATH\Controllers\TeamBuilder.php on line 129.
+ 1 APPPATH\Controllers\TeamBuilder.php(129): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\TeamBuilder::$db', 'C:\\xampp\\htdocs\\codeigniter6\\app\\Controllers\\TeamBuilder.php', 129)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\TeamBuilder->assign_member()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TeamBuilder))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\codeigniter6\\public\\index.php')
+DEBUG - 2026-01-13 07:25:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-13 07:25:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-13 07:26:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-13 07:26:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-13 07:26:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-13 07:26:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-13 07:26:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-13 07:26:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-13 07:26:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-13 07:27:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-13 07:27:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-13 07:27:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-01-13 07:27:15 --> ErrorException: Undefined property: App\Controllers\TeamBuilder::$db
+[Method: POST, Route: team-builder/assign]
+in APPPATH\Controllers\TeamBuilder.php on line 129.
+ 1 APPPATH\Controllers\TeamBuilder.php(129): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\TeamBuilder::$db', 'C:\\xampp\\htdocs\\codeigniter6\\app\\Controllers\\TeamBuilder.php', 129)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\TeamBuilder->assign_member()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TeamBuilder))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\codeigniter6\\public\\index.php')
+DEBUG - 2026-01-13 07:27:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-01-13 07:27:18 --> ErrorException: Undefined property: App\Controllers\TeamBuilder::$db
+[Method: POST, Route: team-builder/assign]
+in APPPATH\Controllers\TeamBuilder.php on line 129.
+ 1 APPPATH\Controllers\TeamBuilder.php(129): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\TeamBuilder::$db', 'C:\\xampp\\htdocs\\codeigniter6\\app\\Controllers\\TeamBuilder.php', 129)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\TeamBuilder->assign_member()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TeamBuilder))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\codeigniter6\\public\\index.php')
+DEBUG - 2026-01-13 07:27:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-01-13 07:27:19 --> ErrorException: Undefined property: App\Controllers\TeamBuilder::$db
+[Method: POST, Route: team-builder/assign]
+in APPPATH\Controllers\TeamBuilder.php on line 129.
+ 1 APPPATH\Controllers\TeamBuilder.php(129): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\TeamBuilder::$db', 'C:\\xampp\\htdocs\\codeigniter6\\app\\Controllers\\TeamBuilder.php', 129)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\TeamBuilder->assign_member()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TeamBuilder))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\codeigniter6\\public\\index.php')
+DEBUG - 2026-01-13 07:27:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-01-13 07:27:19 --> ErrorException: Undefined property: App\Controllers\TeamBuilder::$db
+[Method: POST, Route: team-builder/assign]
+in APPPATH\Controllers\TeamBuilder.php on line 129.
+ 1 APPPATH\Controllers\TeamBuilder.php(129): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\TeamBuilder::$db', 'C:\\xampp\\htdocs\\codeigniter6\\app\\Controllers\\TeamBuilder.php', 129)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\TeamBuilder->assign_member()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TeamBuilder))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\codeigniter6\\public\\index.php')
+DEBUG - 2026-01-13 07:27:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-01-13 07:27:25 --> ErrorException: Undefined property: App\Controllers\TeamBuilder::$db
+[Method: POST, Route: team-builder/assign]
+in APPPATH\Controllers\TeamBuilder.php on line 129.
+ 1 APPPATH\Controllers\TeamBuilder.php(129): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\TeamBuilder::$db', 'C:\\xampp\\htdocs\\codeigniter6\\app\\Controllers\\TeamBuilder.php', 129)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\TeamBuilder->assign_member()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TeamBuilder))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\codeigniter6\\public\\index.php')
+DEBUG - 2026-01-13 07:27:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-01-13 07:27:33 --> ErrorException: Undefined property: App\Controllers\TeamBuilder::$db
+[Method: POST, Route: team-builder/assign]
+in APPPATH\Controllers\TeamBuilder.php on line 129.
+ 1 APPPATH\Controllers\TeamBuilder.php(129): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\TeamBuilder::$db', 'C:\\xampp\\htdocs\\codeigniter6\\app\\Controllers\\TeamBuilder.php', 129)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\TeamBuilder->assign_member()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TeamBuilder))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\codeigniter6\\public\\index.php')
+DEBUG - 2026-01-13 07:27:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-13 07:27:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-13 07:27:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-13 07:27:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-13 07:27:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-13 07:27:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-13 07:27:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-13 07:27:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-13 07:28:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-13 07:28:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-13 07:28:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-13 07:28:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-13 07:28:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-13 07:28:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-13 07:28:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-13 07:28:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-13 07:28:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-13 07:28:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-13 07:28:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-13 07:28:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-13 07:30:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-13 07:30:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-13 07:30:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-13 07:30:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-13 07:30:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-13 07:30:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-13 07:30:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-13 07:31:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-13 07:31:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-13 07:31:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-01-13 07:31:22 --> ErrorException: Undefined property: App\Controllers\TeamBuilder::$db
+[Method: POST, Route: team-builder/assign]
+in APPPATH\Controllers\TeamBuilder.php on line 129.
+ 1 APPPATH\Controllers\TeamBuilder.php(129): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\TeamBuilder::$db', 'C:\\xampp\\htdocs\\codeigniter6\\app\\Controllers\\TeamBuilder.php', 129)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\TeamBuilder->assign_member()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TeamBuilder))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\codeigniter6\\public\\index.php')
+DEBUG - 2026-01-13 07:31:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-01-13 07:31:26 --> ErrorException: Undefined property: App\Controllers\TeamBuilder::$db
+[Method: POST, Route: team-builder/assign]
+in APPPATH\Controllers\TeamBuilder.php on line 129.
+ 1 APPPATH\Controllers\TeamBuilder.php(129): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\TeamBuilder::$db', 'C:\\xampp\\htdocs\\codeigniter6\\app\\Controllers\\TeamBuilder.php', 129)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\TeamBuilder->assign_member()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TeamBuilder))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\codeigniter6\\public\\index.php')
+DEBUG - 2026-01-13 07:31:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-01-13 07:31:28 --> ErrorException: Undefined property: App\Controllers\TeamBuilder::$db
+[Method: POST, Route: team-builder/assign]
+in APPPATH\Controllers\TeamBuilder.php on line 129.
+ 1 APPPATH\Controllers\TeamBuilder.php(129): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\TeamBuilder::$db', 'C:\\xampp\\htdocs\\codeigniter6\\app\\Controllers\\TeamBuilder.php', 129)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\TeamBuilder->assign_member()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TeamBuilder))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\codeigniter6\\public\\index.php')
+DEBUG - 2026-01-13 07:31:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-01-13 07:31:29 --> ErrorException: Undefined property: App\Controllers\TeamBuilder::$db
+[Method: POST, Route: team-builder/assign]
+in APPPATH\Controllers\TeamBuilder.php on line 129.
+ 1 APPPATH\Controllers\TeamBuilder.php(129): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\TeamBuilder::$db', 'C:\\xampp\\htdocs\\codeigniter6\\app\\Controllers\\TeamBuilder.php', 129)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\TeamBuilder->assign_member()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TeamBuilder))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\codeigniter6\\public\\index.php')
+DEBUG - 2026-01-13 07:31:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-01-13 07:31:29 --> ErrorException: Undefined property: App\Controllers\TeamBuilder::$db
+[Method: POST, Route: team-builder/assign]
+in APPPATH\Controllers\TeamBuilder.php on line 129.
+ 1 APPPATH\Controllers\TeamBuilder.php(129): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\TeamBuilder::$db', 'C:\\xampp\\htdocs\\codeigniter6\\app\\Controllers\\TeamBuilder.php', 129)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\TeamBuilder->assign_member()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TeamBuilder))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\codeigniter6\\public\\index.php')
+DEBUG - 2026-01-13 07:31:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-01-13 07:31:30 --> ErrorException: Undefined property: App\Controllers\TeamBuilder::$db
+[Method: POST, Route: team-builder/assign]
+in APPPATH\Controllers\TeamBuilder.php on line 129.
+ 1 APPPATH\Controllers\TeamBuilder.php(129): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\TeamBuilder::$db', 'C:\\xampp\\htdocs\\codeigniter6\\app\\Controllers\\TeamBuilder.php', 129)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\TeamBuilder->assign_member()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TeamBuilder))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\codeigniter6\\public\\index.php')
+DEBUG - 2026-01-13 07:31:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-01-13 07:31:30 --> ErrorException: Undefined property: App\Controllers\TeamBuilder::$db
+[Method: POST, Route: team-builder/assign]
+in APPPATH\Controllers\TeamBuilder.php on line 129.
+ 1 APPPATH\Controllers\TeamBuilder.php(129): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\TeamBuilder::$db', 'C:\\xampp\\htdocs\\codeigniter6\\app\\Controllers\\TeamBuilder.php', 129)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\TeamBuilder->assign_member()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TeamBuilder))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\codeigniter6\\public\\index.php')
+DEBUG - 2026-01-13 07:31:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-01-13 07:31:31 --> ErrorException: Undefined property: App\Controllers\TeamBuilder::$db
+[Method: POST, Route: team-builder/assign]
+in APPPATH\Controllers\TeamBuilder.php on line 129.
+ 1 APPPATH\Controllers\TeamBuilder.php(129): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\TeamBuilder::$db', 'C:\\xampp\\htdocs\\codeigniter6\\app\\Controllers\\TeamBuilder.php', 129)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\TeamBuilder->assign_member()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TeamBuilder))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\codeigniter6\\public\\index.php')
+DEBUG - 2026-01-13 07:31:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-01-13 07:31:31 --> ErrorException: Undefined property: App\Controllers\TeamBuilder::$db
+[Method: POST, Route: team-builder/assign]
+in APPPATH\Controllers\TeamBuilder.php on line 129.
+ 1 APPPATH\Controllers\TeamBuilder.php(129): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\TeamBuilder::$db', 'C:\\xampp\\htdocs\\codeigniter6\\app\\Controllers\\TeamBuilder.php', 129)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\TeamBuilder->assign_member()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TeamBuilder))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\codeigniter6\\public\\index.php')
+DEBUG - 2026-01-13 07:32:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-01-13 07:32:11 --> ErrorException: Undefined property: App\Controllers\TeamBuilder::$db
+[Method: POST, Route: team-builder/assign]
+in APPPATH\Controllers\TeamBuilder.php on line 129.
+ 1 APPPATH\Controllers\TeamBuilder.php(129): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\TeamBuilder::$db', 'C:\\xampp\\htdocs\\codeigniter6\\app\\Controllers\\TeamBuilder.php', 129)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\TeamBuilder->assign_member()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TeamBuilder))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\codeigniter6\\public\\index.php')
+ERROR - 2026-01-13 07:39:44 --> mysqli_sql_exception: Table 'migration_izifiso_db.izifiso_zone_destination_mapping' doesn't exist in C:\xampp\htdocs\codeigniter6\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\codeigniter6\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `z`.`id`...', 0)
+#1 C:\xampp\htdocs\codeigniter6\system\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `z`.`id`...')
+#2 C:\xampp\htdocs\codeigniter6\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `z`.`id`...')
+#3 C:\xampp\htdocs\codeigniter6\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `z`.`id`...', Array, false)
+#4 C:\xampp\htdocs\codeigniter6\app\Models\ZoneModel.php(25): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\codeigniter6\app\Controllers\Zones.php(14): App\Models\ZoneModel->getZonesWithDestinationCount()
+#6 C:\xampp\htdocs\codeigniter6\system\CodeIgniter.php(933): App\Controllers\Zones->index()
+#7 C:\xampp\htdocs\codeigniter6\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Zones))
+#8 C:\xampp\htdocs\codeigniter6\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\codeigniter6\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\codeigniter6\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp\htdocs\codeigniter6\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 C:\xampp\htdocs\codeigniter6\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2026-01-13 07:39:44 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'migration_izifiso_db.izifiso_zone_destination_mapping' doesn't exist
+[Method: GET, Route: zones]
+in SYSTEMPATH\Database\BaseConnection.php on line 684.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `z`.`id`, `z`.`zone_name`, COUNT(m.destination_id) AS destination_count, GROUP_CONCAT(d.destination_name ORDER BY d.destination_name SEPARATOR \', \') AS destination_names
+FROM `izifiso_zone_m` `z`
+LEFT JOIN `izifiso_zone_destination_mapping` `m` ON `m`.`zone_id` = `z`.`id`
+LEFT JOIN `izifiso_destinations` `d` ON `d`.`id` = `m`.`destination_id`
+GROUP BY `z`.`id`', [], false)
+ 2 APPPATH\Models\ZoneModel.php(25): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Zones.php(14): App\Models\ZoneModel->getZonesWithDestinationCount()
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Zones->index()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Zones))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\codeigniter6\\public\\index.php')
+CRITICAL - 2026-01-13 07:39:44 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'migration_izifiso_db.izifiso_zone_destination_mapping' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `z`.`id`, `z`.`zone_name`, COUNT(m.destination_id) AS destination_count, GROUP_CONCAT(d.destination_name ORDER BY d.destination_name SEPARATOR \', \') AS destination_names
+FROM `izifiso_zone_m` `z`
+LEFT JOIN `izifiso_zone_destination_mapping` `m` ON `m`.`zone_id` = `z`.`id`
+LEFT JOIN `izifiso_destinations` `d` ON `d`.`id` = `m`.`destination_id`
+GROUP BY `z`.`id`')
+ 2 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `z`.`id`, `z`.`zone_name`, COUNT(m.destination_id) AS destination_count, GROUP_CONCAT(d.destination_name ORDER BY d.destination_name SEPARATOR \', \') AS destination_names
+FROM `izifiso_zone_m` `z`
+LEFT JOIN `izifiso_zone_destination_mapping` `m` ON `m`.`zone_id` = `z`.`id`
+LEFT JOIN `izifiso_destinations` `d` ON `d`.`id` = `m`.`destination_id`
+GROUP BY `z`.`id`')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `z`.`id`, `z`.`zone_name`, COUNT(m.destination_id) AS destination_count, GROUP_CONCAT(d.destination_name ORDER BY d.destination_name SEPARATOR \', \') AS destination_names
+FROM `izifiso_zone_m` `z`
+LEFT JOIN `izifiso_zone_destination_mapping` `m` ON `m`.`zone_id` = `z`.`id`
+LEFT JOIN `izifiso_destinations` `d` ON `d`.`id` = `m`.`destination_id`
+GROUP BY `z`.`id`', [], false)
+ 4 APPPATH\Models\ZoneModel.php(25): CodeIgniter\Database\BaseBuilder->get()
+ 5 APPPATH\Controllers\Zones.php(14): App\Models\ZoneModel->getZonesWithDestinationCount()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Zones->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Zones))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\codeigniter6\\public\\index.php')
+CRITICAL - 2026-01-13 07:39:44 --> [Caused by] mysqli_sql_exception: Table 'migration_izifiso_db.izifiso_zone_destination_mapping' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `z`.`id`, `z`.`zone_name`, COUNT(m.destination_id) AS destination_count, GROUP_CONCAT(d.destination_name ORDER BY d.destination_name SEPARATOR \', \') AS destination_names
+FROM `izifiso_zone_m` `z`
+LEFT JOIN `izifiso_zone_destination_mapping` `m` ON `m`.`zone_id` = `z`.`id`
+LEFT JOIN `izifiso_destinations` `d` ON `d`.`id` = `m`.`destination_id`
+GROUP BY `z`.`id`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `z`.`id`, `z`.`zone_name`, COUNT(m.destination_id) AS destination_count, GROUP_CONCAT(d.destination_name ORDER BY d.destination_name SEPARATOR \', \') AS destination_names
+FROM `izifiso_zone_m` `z`
+LEFT JOIN `izifiso_zone_destination_mapping` `m` ON `m`.`zone_id` = `z`.`id`
+LEFT JOIN `izifiso_destinations` `d` ON `d`.`id` = `m`.`destination_id`
+GROUP BY `z`.`id`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `z`.`id`, `z`.`zone_name`, COUNT(m.destination_id) AS destination_count, GROUP_CONCAT(d.destination_name ORDER BY d.destination_name SEPARATOR \', \') AS destination_names
+FROM `izifiso_zone_m` `z`
+LEFT JOIN `izifiso_zone_destination_mapping` `m` ON `m`.`zone_id` = `z`.`id`
+LEFT JOIN `izifiso_destinations` `d` ON `d`.`id` = `m`.`destination_id`
+GROUP BY `z`.`id`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `z`.`id`, `z`.`zone_name`, COUNT(m.destination_id) AS destination_count, GROUP_CONCAT(d.destination_name ORDER BY d.destination_name SEPARATOR \', \') AS destination_names
+FROM `izifiso_zone_m` `z`
+LEFT JOIN `izifiso_zone_destination_mapping` `m` ON `m`.`zone_id` = `z`.`id`
+LEFT JOIN `izifiso_destinations` `d` ON `d`.`id` = `m`.`destination_id`
+GROUP BY `z`.`id`', [], false)
+ 5 APPPATH\Models\ZoneModel.php(25): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Zones.php(14): App\Models\ZoneModel->getZonesWithDestinationCount()
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Zones->index()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Zones))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\codeigniter6\\public\\index.php')
+DEBUG - 2026-01-13 07:46:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-13 07:46:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-13 07:46:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-13 07:47:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-01-13 07:47:24 --> ErrorException: Undefined property: App\Controllers\TeamBuilder::$db
+[Method: POST, Route: team-builder/assign]
+in APPPATH\Controllers\TeamBuilder.php on line 129.
+ 1 APPPATH\Controllers\TeamBuilder.php(129): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\TeamBuilder::$db', 'C:\\xampp\\htdocs\\codeigniter6\\app\\Controllers\\TeamBuilder.php', 129)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\TeamBuilder->assign_member()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TeamBuilder))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\codeigniter6\\public\\index.php')
+DEBUG - 2026-01-13 07:49:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-01-13 07:49:55 --> ErrorException: Undefined property: App\Controllers\TeamBuilder::$db
+[Method: POST, Route: team-builder/assign]
+in APPPATH\Controllers\TeamBuilder.php on line 129.
+ 1 APPPATH\Controllers\TeamBuilder.php(129): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\TeamBuilder::$db', 'C:\\xampp\\htdocs\\codeigniter6\\app\\Controllers\\TeamBuilder.php', 129)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\TeamBuilder->assign_member()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TeamBuilder))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\codeigniter6\\public\\index.php')
+DEBUG - 2026-01-13 07:50:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-01-13 07:50:51 --> ErrorException: Undefined property: App\Controllers\TeamBuilder::$db
+[Method: POST, Route: team-builder/assign]
+in APPPATH\Controllers\TeamBuilder.php on line 129.
+ 1 APPPATH\Controllers\TeamBuilder.php(129): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\TeamBuilder::$db', 'C:\\xampp\\htdocs\\codeigniter6\\app\\Controllers\\TeamBuilder.php', 129)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\TeamBuilder->assign_member()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TeamBuilder))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\codeigniter6\\public\\index.php')
+DEBUG - 2026-01-13 07:58:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-13 07:58:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-13 07:58:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2026-01-13 07:58:23 --> mysqli_sql_exception: Table 'migration_izifiso_db.izifiso_zone_destination_mapping' doesn't exist in C:\xampp\htdocs\codeigniter6\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\codeigniter6\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT COUNT(*)...', 0)
+#1 C:\xampp\htdocs\codeigniter6\system\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\xampp\htdocs\codeigniter6\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\xampp\htdocs\codeigniter6\system\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\xampp\htdocs\codeigniter6\app\Controllers\TeamBuilder.php(133): CodeIgniter\Database\BaseBuilder->countAllResults()
+#5 C:\xampp\htdocs\codeigniter6\system\CodeIgniter.php(933): App\Controllers\TeamBuilder->assign_member()
+#6 C:\xampp\htdocs\codeigniter6\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TeamBuilder))
+#7 C:\xampp\htdocs\codeigniter6\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\codeigniter6\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\codeigniter6\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\xampp\htdocs\codeigniter6\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 C:\xampp\htdocs\codeigniter6\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2026-01-13 07:58:23 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'migration_izifiso_db.izifiso_zone_destination_mapping' doesn't exist
+[Method: POST, Route: team-builder/assign]
+in SYSTEMPATH\Database\BaseConnection.php on line 684.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `izifiso_zone_destination_mapping`
+WHERE `zone_id` = :zone_id:', [...], false)
+ 2 APPPATH\Controllers\TeamBuilder.php(133): CodeIgniter\Database\BaseBuilder->countAllResults()
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\TeamBuilder->assign_member()
+ 4 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TeamBuilder))
+ 5 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\codeigniter6\\public\\index.php')
+CRITICAL - 2026-01-13 07:58:23 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'migration_izifiso_db.izifiso_zone_destination_mapping' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `izifiso_zone_destination_mapping`
+WHERE `zone_id` = \'1\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `izifiso_zone_destination_mapping`
+WHERE `zone_id` = \'1\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `izifiso_zone_destination_mapping`
+WHERE `zone_id` = :zone_id:', [...], false)
+ 4 APPPATH\Controllers\TeamBuilder.php(133): CodeIgniter\Database\BaseBuilder->countAllResults()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\TeamBuilder->assign_member()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TeamBuilder))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\codeigniter6\\public\\index.php')
+CRITICAL - 2026-01-13 07:58:23 --> [Caused by] mysqli_sql_exception: Table 'migration_izifiso_db.izifiso_zone_destination_mapping' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM `izifiso_zone_destination_mapping`
+WHERE `zone_id` = \'1\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `izifiso_zone_destination_mapping`
+WHERE `zone_id` = \'1\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `izifiso_zone_destination_mapping`
+WHERE `zone_id` = \'1\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `izifiso_zone_destination_mapping`
+WHERE `zone_id` = :zone_id:', [...], false)
+ 5 APPPATH\Controllers\TeamBuilder.php(133): CodeIgniter\Database\BaseBuilder->countAllResults()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\TeamBuilder->assign_member()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TeamBuilder))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\codeigniter6\\public\\index.php')
+DEBUG - 2026-01-13 07:58:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2026-01-13 07:58:28 --> mysqli_sql_exception: Table 'migration_izifiso_db.izifiso_zone_destination_mapping' doesn't exist in C:\xampp\htdocs\codeigniter6\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\codeigniter6\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT COUNT(*)...', 0)
+#1 C:\xampp\htdocs\codeigniter6\system\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\xampp\htdocs\codeigniter6\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\xampp\htdocs\codeigniter6\system\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\xampp\htdocs\codeigniter6\app\Controllers\TeamBuilder.php(133): CodeIgniter\Database\BaseBuilder->countAllResults()
+#5 C:\xampp\htdocs\codeigniter6\system\CodeIgniter.php(933): App\Controllers\TeamBuilder->assign_member()
+#6 C:\xampp\htdocs\codeigniter6\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TeamBuilder))
+#7 C:\xampp\htdocs\codeigniter6\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\codeigniter6\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\codeigniter6\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\xampp\htdocs\codeigniter6\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 C:\xampp\htdocs\codeigniter6\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2026-01-13 07:58:28 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'migration_izifiso_db.izifiso_zone_destination_mapping' doesn't exist
+[Method: POST, Route: team-builder/assign]
+in SYSTEMPATH\Database\BaseConnection.php on line 684.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `izifiso_zone_destination_mapping`
+WHERE `zone_id` = :zone_id:', [...], false)
+ 2 APPPATH\Controllers\TeamBuilder.php(133): CodeIgniter\Database\BaseBuilder->countAllResults()
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\TeamBuilder->assign_member()
+ 4 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TeamBuilder))
+ 5 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\codeigniter6\\public\\index.php')
+CRITICAL - 2026-01-13 07:58:28 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'migration_izifiso_db.izifiso_zone_destination_mapping' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `izifiso_zone_destination_mapping`
+WHERE `zone_id` = \'1\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `izifiso_zone_destination_mapping`
+WHERE `zone_id` = \'1\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `izifiso_zone_destination_mapping`
+WHERE `zone_id` = :zone_id:', [...], false)
+ 4 APPPATH\Controllers\TeamBuilder.php(133): CodeIgniter\Database\BaseBuilder->countAllResults()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\TeamBuilder->assign_member()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TeamBuilder))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\codeigniter6\\public\\index.php')
+CRITICAL - 2026-01-13 07:58:28 --> [Caused by] mysqli_sql_exception: Table 'migration_izifiso_db.izifiso_zone_destination_mapping' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM `izifiso_zone_destination_mapping`
+WHERE `zone_id` = \'1\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `izifiso_zone_destination_mapping`
+WHERE `zone_id` = \'1\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `izifiso_zone_destination_mapping`
+WHERE `zone_id` = \'1\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `izifiso_zone_destination_mapping`
+WHERE `zone_id` = :zone_id:', [...], false)
+ 5 APPPATH\Controllers\TeamBuilder.php(133): CodeIgniter\Database\BaseBuilder->countAllResults()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\TeamBuilder->assign_member()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TeamBuilder))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\codeigniter6\\public\\index.php')
+DEBUG - 2026-01-13 07:58:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2026-01-13 07:58:32 --> mysqli_sql_exception: Table 'migration_izifiso_db.izifiso_zone_destination_mapping' doesn't exist in C:\xampp\htdocs\codeigniter6\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\codeigniter6\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT COUNT(*)...', 0)
+#1 C:\xampp\htdocs\codeigniter6\system\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\xampp\htdocs\codeigniter6\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\xampp\htdocs\codeigniter6\system\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\xampp\htdocs\codeigniter6\app\Controllers\TeamBuilder.php(133): CodeIgniter\Database\BaseBuilder->countAllResults()
+#5 C:\xampp\htdocs\codeigniter6\system\CodeIgniter.php(933): App\Controllers\TeamBuilder->assign_member()
+#6 C:\xampp\htdocs\codeigniter6\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TeamBuilder))
+#7 C:\xampp\htdocs\codeigniter6\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\codeigniter6\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\codeigniter6\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\xampp\htdocs\codeigniter6\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 C:\xampp\htdocs\codeigniter6\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2026-01-13 07:58:32 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'migration_izifiso_db.izifiso_zone_destination_mapping' doesn't exist
+[Method: POST, Route: team-builder/assign]
+in SYSTEMPATH\Database\BaseConnection.php on line 684.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `izifiso_zone_destination_mapping`
+WHERE `zone_id` = :zone_id:', [...], false)
+ 2 APPPATH\Controllers\TeamBuilder.php(133): CodeIgniter\Database\BaseBuilder->countAllResults()
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\TeamBuilder->assign_member()
+ 4 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TeamBuilder))
+ 5 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\codeigniter6\\public\\index.php')
+CRITICAL - 2026-01-13 07:58:32 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'migration_izifiso_db.izifiso_zone_destination_mapping' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `izifiso_zone_destination_mapping`
+WHERE `zone_id` = \'1\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `izifiso_zone_destination_mapping`
+WHERE `zone_id` = \'1\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `izifiso_zone_destination_mapping`
+WHERE `zone_id` = :zone_id:', [...], false)
+ 4 APPPATH\Controllers\TeamBuilder.php(133): CodeIgniter\Database\BaseBuilder->countAllResults()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\TeamBuilder->assign_member()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TeamBuilder))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\codeigniter6\\public\\index.php')
+CRITICAL - 2026-01-13 07:58:32 --> [Caused by] mysqli_sql_exception: Table 'migration_izifiso_db.izifiso_zone_destination_mapping' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM `izifiso_zone_destination_mapping`
+WHERE `zone_id` = \'1\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `izifiso_zone_destination_mapping`
+WHERE `zone_id` = \'1\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `izifiso_zone_destination_mapping`
+WHERE `zone_id` = \'1\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `izifiso_zone_destination_mapping`
+WHERE `zone_id` = :zone_id:', [...], false)
+ 5 APPPATH\Controllers\TeamBuilder.php(133): CodeIgniter\Database\BaseBuilder->countAllResults()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\TeamBuilder->assign_member()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TeamBuilder))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\codeigniter6\\public\\index.php')
+DEBUG - 2026-01-13 07:58:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2026-01-13 07:58:38 --> mysqli_sql_exception: Table 'migration_izifiso_db.izifiso_zone_destination_mapping' doesn't exist in C:\xampp\htdocs\codeigniter6\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\codeigniter6\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT COUNT(*)...', 0)
+#1 C:\xampp\htdocs\codeigniter6\system\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\xampp\htdocs\codeigniter6\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\xampp\htdocs\codeigniter6\system\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\xampp\htdocs\codeigniter6\app\Controllers\TeamBuilder.php(133): CodeIgniter\Database\BaseBuilder->countAllResults()
+#5 C:\xampp\htdocs\codeigniter6\system\CodeIgniter.php(933): App\Controllers\TeamBuilder->assign_member()
+#6 C:\xampp\htdocs\codeigniter6\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TeamBuilder))
+#7 C:\xampp\htdocs\codeigniter6\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\codeigniter6\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\codeigniter6\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\xampp\htdocs\codeigniter6\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 C:\xampp\htdocs\codeigniter6\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2026-01-13 07:58:38 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'migration_izifiso_db.izifiso_zone_destination_mapping' doesn't exist
+[Method: POST, Route: team-builder/assign]
+in SYSTEMPATH\Database\BaseConnection.php on line 684.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `izifiso_zone_destination_mapping`
+WHERE `zone_id` = :zone_id:', [...], false)
+ 2 APPPATH\Controllers\TeamBuilder.php(133): CodeIgniter\Database\BaseBuilder->countAllResults()
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\TeamBuilder->assign_member()
+ 4 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TeamBuilder))
+ 5 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\codeigniter6\\public\\index.php')
+CRITICAL - 2026-01-13 07:58:38 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'migration_izifiso_db.izifiso_zone_destination_mapping' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `izifiso_zone_destination_mapping`
+WHERE `zone_id` = \'10\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `izifiso_zone_destination_mapping`
+WHERE `zone_id` = \'10\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `izifiso_zone_destination_mapping`
+WHERE `zone_id` = :zone_id:', [...], false)
+ 4 APPPATH\Controllers\TeamBuilder.php(133): CodeIgniter\Database\BaseBuilder->countAllResults()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\TeamBuilder->assign_member()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TeamBuilder))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\codeigniter6\\public\\index.php')
+CRITICAL - 2026-01-13 07:58:38 --> [Caused by] mysqli_sql_exception: Table 'migration_izifiso_db.izifiso_zone_destination_mapping' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM `izifiso_zone_destination_mapping`
+WHERE `zone_id` = \'10\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `izifiso_zone_destination_mapping`
+WHERE `zone_id` = \'10\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `izifiso_zone_destination_mapping`
+WHERE `zone_id` = \'10\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `izifiso_zone_destination_mapping`
+WHERE `zone_id` = :zone_id:', [...], false)
+ 5 APPPATH\Controllers\TeamBuilder.php(133): CodeIgniter\Database\BaseBuilder->countAllResults()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\TeamBuilder->assign_member()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TeamBuilder))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\codeigniter6\\public\\index.php')
+DEBUG - 2026-01-13 07:58:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-13 07:59:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-13 07:59:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-13 07:59:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-13 07:59:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-13 07:59:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-13 07:59:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-13 07:59:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-13 07:59:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-13 07:59:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-13 08:00:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-13 08:00:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-13 08:00:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-13 08:00:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-13 08:00:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-13 08:08:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-13 08:09:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-13 08:09:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-13 08:09:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-13 08:09:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-13 08:09:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-13 08:09:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-13 08:09:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-13 08:09:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-13 08:11:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-13 08:11:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-13 08:11:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-13 08:11:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-13 08:12:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-13 08:12:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-13 08:12:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-13 08:15:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-13 08:15:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-13 08:15:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-13 08:15:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-13 08:19:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-13 08:20:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-13 08:20:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-13 08:20:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-13 08:22:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-13 08:22:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-13 08:23:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-13 08:23:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-13 08:23:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-13 08:23:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-13 09:23:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-13 09:23:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-13 09:38:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-01-13 09:38:49 --> ErrorException: Undefined variable $department_id
+[Method: GET, Route: team-builder]
+in APPPATH\Views\team_builder_view.php on line 258.
+ 1 APPPATH\Views\team_builder_view.php(258): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $department_id', 'C:\\xampp\\htdocs\\codeigniter6\\app\\Views\\team_builder_view.php', 258)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\codeigniter6\\app\\Views\\team_builder_view.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('team_builder_view', [], true)
+ 5 APPPATH\Controllers\TeamBuilder.php(21): view('team_builder_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\TeamBuilder->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TeamBuilder))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\codeigniter6\\public\\index.php')
+DEBUG - 2026-01-13 09:40:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-13 09:40:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-13 09:40:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-13 09:40:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-13 09:40:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-13 09:40:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-13 09:40:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-13 09:40:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-13 09:50:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-13 09:50:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-13 09:50:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-13 09:50:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-13 09:51:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-01-13 09:51:58 --> ErrorException: Undefined variable $department_id
+[Method: GET, Route: team-builder]
+in APPPATH\Views\team_builder_view.php on line 258.
+ 1 APPPATH\Views\team_builder_view.php(258): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $department_id', 'C:\\xampp\\htdocs\\codeigniter6\\app\\Views\\team_builder_view.php', 258)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\codeigniter6\\app\\Views\\team_builder_view.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('team_builder_view', [], true)
+ 5 APPPATH\Controllers\TeamBuilder.php(21): view('team_builder_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\TeamBuilder->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TeamBuilder))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\codeigniter6\\public\\index.php')
+DEBUG - 2026-01-13 09:52:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-13 09:52:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-13 09:53:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-13 09:53:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-13 09:53:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-13 09:54:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-13 09:54:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-13 09:54:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-13 10:00:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-13 10:00:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-13 10:00:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-13 10:00:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-13 10:00:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-13 10:00:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-13 10:00:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-13 10:00:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-13 10:01:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-13 10:01:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-13 10:01:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-13 10:01:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-13 10:01:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-13 10:01:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-13 10:02:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-13 10:02:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-13 10:02:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-13 10:02:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-01-13 10:02:17 --> CodeIgniter\Filters\Exceptions\FilterException: "auth|fieldDept" filter must have a matching alias defined.
+[Method: GET, Route: destinations]
+in SYSTEMPATH\Filters\Filters.php on line 590.
+ 1 SYSTEMPATH\Filters\Filters.php(590): CodeIgniter\Filters\Exceptions\FilterException::forNoAlias('auth|fieldDept')
+ 2 SYSTEMPATH\Filters\Filters.php(641): CodeIgniter\Filters\Filters->enableFilter('auth|fieldDept', 'before')
+ 3 SYSTEMPATH\CodeIgniter.php(467): CodeIgniter\Filters\Filters->enableFilters([...], 'before')
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\codeigniter6\\public\\index.php')
+DEBUG - 2026-01-13 10:02:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-13 10:02:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-13 10:02:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-13 10:02:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-13 10:02:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-13 10:03:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-13 10:03:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-13 10:03:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-13 10:05:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-13 10:25:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-13 10:25:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-13 10:26:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-13 10:26:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-13 10:26:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-13 10:26:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-13 10:26:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-13 10:26:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-13 10:26:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-13 10:28:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-13 10:28:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-13 10:28:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-13 10:28:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-13 10:28:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-13 10:28:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-13 10:28:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-13 10:28:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-13 10:28:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-13 10:28:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-13 10:29:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-13 10:30:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-01-13 10:30:26 --> CodeIgniter\Filters\Exceptions\FilterException: "auth|fieldDept" filter must have a matching alias defined.
+[Method: GET, Route: destinations]
+in SYSTEMPATH\Filters\Filters.php on line 590.
+ 1 SYSTEMPATH\Filters\Filters.php(590): CodeIgniter\Filters\Exceptions\FilterException::forNoAlias('auth|fieldDept')
+ 2 SYSTEMPATH\Filters\Filters.php(641): CodeIgniter\Filters\Filters->enableFilter('auth|fieldDept', 'before')
+ 3 SYSTEMPATH\CodeIgniter.php(467): CodeIgniter\Filters\Filters->enableFilters([...], 'before')
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\codeigniter6\\public\\index.php')
+DEBUG - 2026-01-13 10:30:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-13 10:30:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-13 10:30:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-13 10:30:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-13 10:30:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-13 10:31:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-13 10:31:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-13 10:31:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-13 10:31:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-13 10:31:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-13 10:31:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-13 10:31:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-13 10:31:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-13 10:31:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-13 10:31:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-13 10:31:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-13 10:31:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-13 11:20:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-13 11:20:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-13 11:20:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-13 11:20:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-13 11:20:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-13 11:20:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-13 11:20:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-13 11:20:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-13 11:20:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-13 11:20:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-13 11:37:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-13 11:37:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-13 11:37:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-13 11:39:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-13 11:39:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-13 11:39:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-13 11:39:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-13 11:39:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-13 11:39:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-13 11:39:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-13 11:40:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-13 11:40:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-13 11:40:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-13 11:40:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-13 11:40:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-13 11:40:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-13 12:18:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-13 12:18:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-13 12:19:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-13 12:19:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-13 12:22:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-13 12:22:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-13 12:22:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-13 12:22:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-13 12:22:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-13 12:22:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-13 12:22:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-13 12:22:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-13 12:23:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-13 12:23:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-13 12:23:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-13 12:23:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-13 12:23:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-13 13:12:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-13 13:12:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-13 13:12:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-13 13:12:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-13 13:12:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-13 13:12:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-13 13:12:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-13 13:13:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-13 13:13:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-13 13:13:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-13 13:13:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-13 13:13:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-13 13:14:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-13 13:14:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-13 13:14:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-13 13:14:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-13 13:14:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-13 13:14:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-13 13:15:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-13 13:16:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-13 13:16:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-13 13:16:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-13 13:16:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-13 13:16:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-13 13:17:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-13 13:17:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-13 13:18:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-13 13:18:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-13 13:18:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-13 13:18:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-13 13:19:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-13 13:19:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-13 13:20:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-13 13:20:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-13 13:20:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-13 13:20:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-13 13:26:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-13 13:26:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-13 13:27:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-13 13:28:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-13 13:28:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-13 13:28:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-13 13:28:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-13 13:28:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-13 13:28:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-13 13:28:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-13 13:29:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-13 13:29:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-13 13:29:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-13 13:29:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-13 13:29:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-13 13:29:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-13 13:29:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-13 13:30:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-13 13:30:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-13 13:40:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-13 13:40:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-13 13:50:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-13 13:50:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-13 13:50:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-13 13:50:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-13 13:50:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-13 13:50:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-13 13:50:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-13 13:50:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-13 13:51:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-13 13:51:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-13 14:15:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-13 14:15:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-13 14:15:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-13 14:15:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-13 14:15:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-13 14:15:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-13 14:15:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-13 14:15:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
